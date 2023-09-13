@@ -89,7 +89,7 @@ export function toArray(value) {
  */
 export function forEach(data, callback) {
   if (data && isFunction(callback)) {
-    if (Array.isArray(data) || isNumber(data.length)/* array-like */) {
+    if (Array.isArray(data) || isNumber(data.length) /* array-like */) {
       toArray(data).forEach((value, key) => {
         callback.call(data, value, key, data);
       });
@@ -845,6 +845,7 @@ export function resetAndGetOrientation(arrayBuffer) {
       const length = dataView.byteLength;
       let offset = 2;
 
+      // 寻找 0xF1 application segment - 用于存储特定应用程序的数据和信息
       while (offset + 1 < length) {
         if (dataView.getUint8(offset) === 0xFF && dataView.getUint8(offset + 1) === 0xE1) {
           app1Start = offset;

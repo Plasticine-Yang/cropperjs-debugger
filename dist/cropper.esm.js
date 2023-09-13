@@ -5,7 +5,7 @@
  * Copyright 2015-present Chen Fengyuan
  * Released under the MIT license
  *
- * Date: 2023-08-26T08:14:27.943Z
+ * Date: 2023-09-13T06:57:31.114Z
  */
 
 function ownKeys(e, r) {
@@ -3264,3 +3264,4 @@ var Cropper = /*#__PURE__*/function () {
 assign(Cropper.prototype, render, preview, events, handlers, change, methods);
 
 export { Cropper as default };
+//# sourceMappingURL=cropper.esm.js.map

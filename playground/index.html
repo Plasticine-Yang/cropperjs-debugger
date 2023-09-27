@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,7 +8,20 @@
   </head>
   <body>
     <div id="app">
-      <img id="demo-image" src="/demo-image.jpg" alt="demo-image" style="display: block; max-width: 100%;">
+      <div class="container">
+        <div class="img-container">
+          <img
+            id="demo-image"
+            src="/demo-image.jpg"
+            alt="demo-image"
+            style="display: block; max-width: 100%"
+          />
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="img-preview"></div>
+      </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>

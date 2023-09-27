@@ -1,4 +1,38 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #0b132b;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  width: 800px;
+  height: 600px;
+  background: #1c2541;
+}
+
+.divider {
+  height: 100%;
+  width: 2px;
+  background: darkslategrey;
+}
+
+.img-container,
+.img-preview {
   width: 400px;
-  height: 300px;
+  height: 600px;
+}
+
+.img-preview {
+  overflow: hidden;
 }

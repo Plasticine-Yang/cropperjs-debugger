@@ -24,15 +24,23 @@ body {
 .divider {
   height: 100%;
   width: 2px;
-  background: darkslategrey;
+  background: #abc4ff;
 }
 
 .img-container,
-.img-preview {
+.img-preview-container {
   width: 400px;
   height: 600px;
 }
 
+.img-preview-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .img-preview {
+  width: 350px;
+  height: 100%;
   overflow: hidden;
 }
